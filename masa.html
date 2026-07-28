@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizzería Napoletana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="#inicio" class="logo-mark" aria-label="Inicio">
+      <img src="./img/masaa.png" class="logo-img" alt="masa">
+      <span class="logo-text"><span></span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links" id="navLinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">MeNú</a>
+      <a href="#contacto">ConTacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="char-spots"></div>
+  <div class="hero-inner">
+    <img src="./img/cajas.png"  alt="masa">
+    <span class="eyebrow">· Horno Estilo Napoli ·</span>
+    <h1>Masa madre, <em>24 horas</em> de fermentación</h1>
+    <p class="lead">Harina 00, pomodoro y mozzarella fresca. Cocinamos cada pizza a más de 400°C, como se hace en Nápoles desde siempre.</p>
+    <div class="cta-row">
+      <a href="#menu" class="btn btn-solid">MeNú</a>
+      <a href="#contacto" class="btn btn-outline">ConTacto</a>
+    </div>
+  </div>
+</section>
+
+<div class="scallop"></div>
+
+<section class="menu-section" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+<!--       <span class="eyebrow">MENÚ</span>
+ -->      <h2>MeNú</h2>
+      <p>Todas nuestras pizzas se cocinan <br> en horno a más de 400°C | 30cm</p>
+    </div>
+
+    <div class="menu-cat">
+<!--       <h3 class="menu-cat-title">Clásicas</h3>
+ -->      <div class="menu-grid">
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/marinara.png" alt="Pizza Marinara"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">MARINARA</h4><span class="card-price">$8.500</span></div>
+            <p class="card-desc">Pomodoro, muzzarella, albahaca, aceite de oliva</p>
+          </div>
+        </div>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/marga.png" alt="Pizza Margherita"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">MARGHERITA</h4><span class="card-price">$10.999</span></div>
+            <p class="card-desc">Pomodoro, muzzarella, albahaca, aceite de oliva</p>
+          </div>
+        </div>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/fugazza.png" alt="Pizza Fugazza"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">FUGAZZA</h4><span class="card-price">$12.000</span></div>
+            <p class="card-desc">Pomodoro, muzzarella, cebolla's, aceite de oliva</p>
+          </div>
+        </div>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/pesto.png" alt="Pizza Pesto"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">PESTRONI</h4><span class="card-price">$12.000</span></div>
+            <p class="card-desc">Pesto, muzzarella, tomate cherry, aceite de oliva</p>
+          </div>
+        </div>
+      </div><br>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/champi.png" alt="Pizza Pesto"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">FUNGHI</h4><span class="card-price">$13.500</span></div>
+            <p class="card-desc">Pomodoro, FUNGHI's, muzzarella, , aceite de oliva</p>
+          </div>
+        </div>
+    </div>
+    <div class="marquee" aria-label="Variaciones de nuestra marca">
+  <div class="marquee-track" id="track">
+    <div class="marquee-item"><img src="" alt=""></div>
+<!--     <span class="marquee-dot"></span>
+ -->    <div class="marquee-item"><img src="./img/masaa.png" alt="Logo variante 2"></div>
+    <span class="marquee-dot"></span>
+<!--     <div class="marquee-item"><img src="data:image/png;base64,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" alt="Logo variante 3"></div>
+     <span class="marquee-dot"></span>-->
+    <div class="marquee-item"><img src="" alt=""></div>
+    <span class="marquee-dot"></span>
+    <div class="marquee-item"><img src="" alt=""></div>
+    <span class="marquee-dot"></span>
+    <div class="marquee-item"><img src="" alt=""></div>
+    <span class="marquee-dot"></span>
+  </div>
+</div>
+
+
+<!--     <div class="menu-cat">
+      <h3 class="menu-cat-title">Especiales</h3>
+      <div class="menu-grid">
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/napo.jpg" alt="Pizza Diavola"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">Diavola</h4><span class="card-price">$8.200</span></div>
+            <p class="card-desc">Tomate, fior di latte, salame picante, chile</p>
+          </div>
+        </div>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/napo.jpg" alt="Pizza Capricciosa"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">Capricciosa</h4><span class="card-price">$8.700</span></div>
+            <p class="card-desc">Jamón cocido, hongos, alcachofa, aceitunas</p>
+          </div>
+        </div>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/napo.jpg" alt="Pizza Quattro Formaggi"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">Quattro Formaggi</h4><span class="card-price">$8.500</span></div>
+            <p class="card-desc">Mozzarella, gorgonzola, parmesano, provolone</p>
+          </div>
+        </div>
+        <div class="pizza-card">
+          <div class="card-img"><img src="./img/napo.jpg" alt="Pizza Prosciutto e Funghi"></div>
+          <div class="card-body">
+            <div class="card-top"><h4 class="card-name">Prosciutto e Funghi</h4><span class="card-price">$9.300</span></div>
+            <p class="card-desc">Jamón crudo, hongos, mozzarella, rúcula</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
+<!--     <div class="menu-cat">
+      <h3 class="menu-cat-title">Bebidas</h3>
+      <div class="drink-grid">
+        <div class="drink-item"><span class="drink-name">Agua con / sin gas</span><span class="drink-price">$2.000</span></div>
+        <div class="drink-item"><span class="drink-name">Limonada casera</span><span class="drink-price">$2.800</span></div>
+        <div class="drink-item"><span class="drink-name">Cerveza artesanal</span><span class="drink-price">$3.500</span></div>
+        <div class="drink-item"><span class="drink-name">Vino de la casa (copa)</span><span class="drink-price">$3.200</span></div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<div class="scallop flip"></div>
+
+<section class="contact-section" id="contacto">
+  <img src="./img/masa2.png" width="200" alt="Masa">
+  <div class="char-spots"></div>
+  <div class="wrap">
+    <div class="contact-inner">
+      <div class="contact-card">
+        <h2>Pedidos</h2>
+        <p class="lead">Escribínos por WhatsApp <br>y armamos tu pedido.</p>
+        <div class="info-grid">
+          <div class="info-block">
+            <h3>Producto | Dirección</h3>
+            <p>Elegí tus pizza's y datos de compra </p>
+          </div>
+          <div class="info-block">
+            <h3>Horario</h3>
+            <p>Martes a Domingo · 19:00 a 00:00</p>
+          </div>
+<!--           <div class="info-block">
+            <h3>Delivery o Takeaway</h3>
+            <p>Takeaway o Pedidos YA</p>
+          </div>
+ -->        </div>
+        <a class="wa-btn" href="https://wa.me/541124068870?text=Hola!%20Quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.31-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.56-.36.75-.36h.54c.17 0 .41-.03.63.49.24.58.81 2.02.88 2.16.07.15.11.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.29.72 1.19 1.55 1.93 1.07.96 1.97 1.26 2.25 1.4.28.14.44.12.61-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.62.77 1.9.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg>
+          Pedí por WhatsApp
+        </a>(takeaway)<br>
+        <a class="wa-btn" href="#" target="_blank" rel="noopener">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.31-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.56-.36.75-.36h.54c.17 0 .41-.03.63.49.24.58.81 2.02.88 2.16.07.15.11.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.29.72 1.19 1.55 1.93 1.07.96 1.97 1.26 2.25 1.4.28.14.44.12.61-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.62.77 1.9.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg>
+          Pedidos YA
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <a href="#inicio" class="logo-mark">
+        <img src="./img/masaa.png" class="logo-img" alt="Logo masa">
+      </a>
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 masa. todos los derechos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="float-stack">
+  <button class="fab fab-top" id="toTop" aria-label="Volver arriba">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f8e4af" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+  <a class="fab fab-wa" href="https://wa.me/541124068870?text=Hola!%20Quiero%20hacer%20un%20pedido" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.31-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09.99-2.37.26-.29.56-.36.75-.36h.54c.17 0 .41-.03.63.49.24.58.81 2.02.88 2.16.07.15.11.32.02.51-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.29.72 1.19 1.55 1.93 1.07.96 1.97 1.26 2.25 1.4.28.14.44.12.61-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.63-.14.26.1 1.62.77 1.9.9.28.14.46.21.53.32.07.12.07.68-.17 1.36z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
