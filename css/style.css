@@ -306,3 +306,36 @@
     .fab-wa{width:40px;height:40px;}
     .fab-top{width:40px;height:40px;}
   }
+
+  /* ---------- TYPEWRITER (hero title) ---------- */
+.tw-cursor{
+  display:inline-block;
+  color:var(--brown);
+  animation:tw-blink 0.8s step-end infinite;
+}
+@keyframes tw-blink{
+  0%, 100%{opacity:1;}
+  50%{opacity:0;}
+}
+
+/* ---------- Reservar altura fija para el h1 (evita que la página salte) ---------- */
+.hero h1{
+  min-height: calc(1.08em * 2); /* 2 líneas según su line-height actual */
+  display: flex;
+  align-items: center;      /* centra verticalmente el bloque de texto */
+  justify-content: center;
+}
+.hero h1 .tw-line{
+  display: block;
+  width: 100%;               /* fuerza a que el texto use todo el ancho y haga wrap normal */
+  text-align: center;
+}
+.tw-cursor{
+  display:inline-block;
+  color:var(--brown);
+  animation:tw-blink 0.8s step-end infinite;
+}
+@keyframes tw-blink{
+  0%, 100%{opacity:1;}
+  50%{opacity:0;}
+}
