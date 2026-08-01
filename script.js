@@ -96,3 +96,21 @@ const burger = document.getElementById('burger');
 
     setTimeout(typeStep, startDelay);
   })();
+
+  // ---------- Mini nube de aviso en el botón de pizza (una vez por sesión) ----------
+  (function(){
+    const tooltip = document.querySelector('.pizza-tooltip');
+    if(!tooltip) return;
+
+    const yaSeMostro = sessionStorage.getItem('pizzaTooltipShown');
+    if(yaSeMostro) return; // no se muestra de nuevo hasta reiniciar el navegador
+
+    setTimeout(() => {
+      tooltip.classList.add('show');
+      setTimeout(() => {
+        tooltip.classList.remove('show');
+      }, 5000); // se mantiene visible 5 segundos
+    }, 900); // pequeño delay antes de aparecer al cargar
+
+    sessionStorage.setItem('pizzaTooltipShown', 'true');
+  })();
